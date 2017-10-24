@@ -1,5 +1,5 @@
 {
-  "name": "debuggable",
+  "name": "wiretap",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -7,6 +7,7 @@
     "react-dom": "^16.0.0",
     "react-ga": "^2.3.5",
     "react-scripts": "1.0.14",
+    "react-syntax-highlighter": "^5.7.1",
     "styled-components": "^2.2.1"
   },
   "scripts": {

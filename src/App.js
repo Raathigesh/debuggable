@@ -1,61 +1,89 @@
 import React from "react";
-import styled from "styled-components";
-import Product from "./Product";
+import styled, { injectGlobal } from "styled-components";
+import Hero from "./Hero";
+import Feature from "./Feature";
+import Footer from "./Footer";
+import Docs from "./Docs";
+import media from "./MediaUtil";
 
-const Container = styled.div`
-  margin-right: auto;
-  margin-left: auto;
+injectGlobal`
+body {
+  background-color: #f4f4f4;
+  min-height: 100vh;
+}
+`;
+
+const IndexGrid = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  font-size: 30px;
-  color: gray;
-  align-items: center;
-  min-height: 100vh;
 `;
 
-const Logo = styled.img`
-  margin-top: 50px;
-  margin-bottom: 50px;
-`;
-
-const Products = styled.div`
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-`;
-
-const Footer = styled.span`
-  margin-top: 50px;
-  margin-bottom: 50px;
-  font-size: 13px;
+const FeatureGrid = styled.div`
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-left: auto;
+  margin-right: auto;
+  flex-flow: wrap;
+  margin-left: 200px;
+  margin-right: 200px;
+  ${media.desktop`
+  margin-right: ${props => props.theme.mainMargin.desktop};
+  `};
+  ${media.desktop`
+  margin-left: ${props => props.theme.mainMargin.desktop};
+  `};
+  ${media.tablet`
+  margin-right: ${props => props.theme.mainMargin.tablet};
+  margin-left: ${props => props.theme.mainMargin.tablet};
+  grid-template-columns: 1fr;
+  `};
+  ${media.phone`
+  margin-right: ${props => props.theme.mainMargin.phone};
+  margin-left: ${props => props.theme.mainMargin.phone};
+  grid-template-columns: 1fr;
+  `};
 `;
 
 const IndexPage = () => (
-  <Container>
-    <Logo src={require("./assets/logo.png")} />
-    <Products>
-      <Product
-        name="Atmo"
-        logo={require("./assets/atmo.png")}
-        url={"http://getatmo.com"}
+  <IndexGrid>
+    <div>
+      <Hero />
+      <Docs />
+    </div>
+    <FeatureGrid>
+      <Feature
+        url={require("./images/mst.png")}
+        title="Inspect Mobx and Mobx State Tree"
+        subtitle="Supports mobx and mobx state tree"
       />
-      <Product
-        name="Wiretap"
-        logo={require("./assets/wiretap.png")}
-        url={"http://wiretap.debuggable.io"}
+      <Feature
+        url={require("./images/Inspect.png")}
+        title="Inspect observables live"
+        subtitle="Examine your observables in realtime as they change"
       />
-    </Products>
-    <Footer>
-      Side projects by{" "}
-      <a href="https://twitter.com/Raathigesh" target="_blank">
-        Raathigeshan
-      </a>
-    </Footer>
-  </Container>
+      <Feature
+        url={require("./images/actions.png")}
+        title="Invoke actions"
+        subtitle="Invoke actions with arguments"
+      />
+      <Feature
+        url={require("./images/Record.png")}
+        title="Actions, snapshots and patches"
+        subtitle="Examine how your observables change overtime"
+      />
+      <Feature
+        url={require("./images/Patches.png")}
+        title="Record and replay actions"
+        subtitle="Record and replay actions with mobx state tree"
+      />
+      <Feature
+        url={require("./images/updates.png")}
+        title="Receive updates"
+        subtitle="Get new features to wiretap with a click."
+      />
+    </FeatureGrid>
+    <Footer />
+  </IndexGrid>
 );
 
 export default IndexPage;
