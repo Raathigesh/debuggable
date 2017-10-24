@@ -5,6 +5,10 @@ const FeatureContent = styled.div`
   display: flex;
   flex-direction: row;
   margin: 15px;
+  background-color: #ffe1ad;
+  padding: 10px;
+  border-radius: 5px;
+
   @media (max-width: 700px) {
     flex-direction: column;
   }

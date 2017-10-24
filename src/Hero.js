@@ -21,8 +21,17 @@ const Title = styled.div`
   font-size: 30px;
   margin-top: 25px;
   margin-bottom: 25px;
-  ${media.tablet`font-size: 20px; margin-top: 15px; margin-bottom: 15px;`};
-  ${media.phone`font-size: 20px; margin-top: 5px; margin-bottom: 5px; `};
+  max-width: 490px;
+  ${media.tablet`font-size: 20px; margin-top: 15px; margin-bottom: 15px; max-width: 100%;`};
+  ${media.phone`font-size: 20px; margin-top: 5px; margin-bottom: 5px;  max-width: 100%;`};
+`;
+
+const SubTitle = styled.div`
+  font-size: 15px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  ${media.tablet`font-size: 12px; margin-top: 20px; margin-bottom: 20px;`};
+  ${media.phone`font-size: 12px; margin-top: 20px; margin-bottom: 20px; `};
 `;
 
 const DownloadButton = styled.a`
@@ -54,18 +63,19 @@ const Image = styled.img`
 `;
 
 const LogoImage = styled.img`
-  width: 75px;
-  ${media.tablet`width: 70px;`};
-  ${media.phone`width: 50px;`};
+  height: 125px;
+  ${media.tablet`height: 70px;`};
+  ${media.phone`height: 50px;`};
 `;
 
 const Hero = () => (
   <HeroGrid>
     <DetailPanel>
       <LogoImage src={require("./images/wiretap.png")} />
-      <Title>
-        Stare at the soul of your mobx and mobx state tree observables
-      </Title>
+      <Title>A desktop app for inspecting mobx and mobx state tree apps</Title>
+      <SubTitle>
+        The dev tool your mobx and mobx-state-tree app deserve
+      </SubTitle>
       <DownloadButton
         href="https://github.com/Raathigesh/wiretap"
         target="_blank"

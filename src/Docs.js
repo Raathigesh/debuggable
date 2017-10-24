@@ -31,7 +31,7 @@ const Title = styled.div`font-weight: bold;`;
 
 const FirstStep = styled.div`@media (max-width: 700px) {margin-bottom: 20px;}`;
 
-const ViewDoc = styled.button`
+const ViewDoc = styled.a`
   background-color: #793ec5;
   border: none;
   color: white;
@@ -79,7 +79,9 @@ const Docs = () => (
         </div>
       </FirstStep>
     </DocsContent>
-    <ViewDoc>Learn How To Integrate With Your App</ViewDoc>
+    <ViewDoc href="https://github.com/Raathigesh/wiretap" target="_blank">
+      Learn How To Integrate With Your App
+    </ViewDoc>
   </Container>
 );
 
