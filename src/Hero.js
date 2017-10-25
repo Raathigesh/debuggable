@@ -50,6 +50,8 @@ const DownloadButton = styled.a`
 const ImageContainer = styled.div`
   margin: auto;
   margin-right: 100px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   ${media.tablet`margin-left: 5px; margin-right: 5px;`} ${media.phone`margin-left: 5px; margin-right: 5px;`};
 `;
 
@@ -58,8 +60,8 @@ const Image = styled.img`
   max-width: 100%;
   width: auto;
   height: auto;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(125, 67, 202, 0.05);
-  border: 1px solid #d7bcff;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.18);
+  border: 1px solid #e0caff;
 `;
 
 const LogoImage = styled.img`

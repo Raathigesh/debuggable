@@ -46,8 +46,8 @@ const codeString = `npm install mobx-wiretap --dev
 or
 yarn add mobx-wiretap  --dev`;
 
-const InspectCode = `import { initialize, inspect } from "mobx-wiretap";
-initialize("Todo app");
+const InspectCode = `import { wiretap, inspect } from "mobx-wiretap";
+wiretap("Todo app");
 inspect("Todos Array", theObservableToInspect);
 `;
 
