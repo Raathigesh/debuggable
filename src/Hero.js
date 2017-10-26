@@ -79,16 +79,16 @@ const Hero = () => (
         The dev tool your mobx and mobx-state-tree app deserve
       </SubTitle>
       <DownloadButton
-        href="https://github.com/Raathigesh/wiretap"
+        href="https://github.com/Raathigesh/wiretap/releases/download/v0.1.0/wiretap-setup-0.1.0.exe"
         target="_blank"
       >
         Windows
       </DownloadButton>
       <DownloadButton
-        href="https://github.com/Raathigesh/wiretap"
+        href="https://github.com/Raathigesh/wiretap/releases/download/v0.1.0/wiretap-0.1.0.dmg"
         target="_blank"
       >
-        Mac
+        Mac OS
       </DownloadButton>
       <DownloadButton
         href="https://github.com/Raathigesh/wiretap"
