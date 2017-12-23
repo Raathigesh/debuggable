@@ -32,6 +32,9 @@ const Footer = styled.span`
   margin-top: 50px;
   margin-bottom: 50px;
   font-size: 13px;
+  & > a {
+    text-decoration: none;
+  }
 `;
 
 const IndexPage = () => (
