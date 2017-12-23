@@ -1,21 +1,22 @@
-import React from "react";
-import styled from "styled-components";
+import React from 'react';
+import styled from 'styled-components';
 
-const FooterGrid = styled.div`
-  text-align: center;
-  padding: 10px;
-  color: #743dc2;
-  font-size: 12px;
-  margin-top: 10px;
+const FooterSpan = styled.span`
+padding-top: 10px;
+padding-bottom: 10px;
+font-size: 13px;
+text-align: center;
+background-color: #f5f6fa;
 `;
 
-const Footer = () => (
-  <FooterGrid>
-    A side project by{" "}
-    <a href="https://twitter.com/Raathigesh" target="_blank">
-      Raathigeshan
-    </a>
-  </FooterGrid>
-);
+const Link = styled.a`
+color: #c5515c;
+text-decoration: solid;
+`;
 
-export default Footer;
+export default function Footer() {
+    return <FooterSpan> A project by{" "}
+    <Link href="https://twitter.com/Raathigesh" target="_blank">
+      Raathigeshan
+    </Link></FooterSpan>
+}
