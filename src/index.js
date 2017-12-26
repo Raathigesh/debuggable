@@ -1,5 +1,6 @@
 import React from "react";
-import ReactDOM from "react-dom";
+// import ReactDOM from "react-dom";
+import { render } from "react-snapshot";
 import ReactGA from "react-ga";
 import { ThemeProvider } from "styled-components";
 import "./index.css";
@@ -18,7 +19,7 @@ const theme = {
     phone: "10px"
   }
 };
-ReactDOM.render(
+render(
   <ThemeProvider theme={theme}>
     <App />
   </ThemeProvider>,
