@@ -21,11 +21,11 @@ const IndexPage = () => (
   <IndexGrid>
     <Header />
     <RightFeature image={require("./images/feature1.png")} header={"Test Explorer"} subheader={"Locate tests with ease through the test explorer"}/>
-    <LeftFeature image={require("./images/feature5.png")} header={"Tests View"} subheader={"Displays It statements from the test file"}/>
+    <LeftFeature image={require("./images/feature5.png")} header={"Test View"} subheader={"Shows It statements from the test file"}/>
     <RightFeature image={require("./images/feature6.png")} header={"Multiple Watch Modes"} subheader={"Watch project or a file or a particular test"}/>
     <LeftFeature image={require("./images/feature2.png")} header={"Quick Search"} subheader={"Search across all It statements"}/>
     <RightFeature image={require("./images/feature3.png")} header={"Coverage Reports"} subheader={"Integrated converage reports"}/>
-    <LeftFeature image={require("./images/feature4.png")} header={"Selective Snapshot Update"} subheader={"Inline failure messages & Individual snapshot updates"}/>
+    <LeftFeature image={require("./images/feature4.png")} header={"Selective Snapshot Update"} subheader={"Inlined failure message & Ability to update individual snapshot"}/>
     <RightFeature image={require("./images/feature7.png")} header={"Inline Summary"} subheader={"Test summary and coverage summary"}/>
     <Footer />
   </IndexGrid>

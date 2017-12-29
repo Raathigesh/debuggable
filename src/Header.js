@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import media from "styled-media-query";
 import { Margin, Padding } from "styled-components-spacing";
 import DownloadButton from "./DownloadButton";
 
@@ -33,16 +34,26 @@ const Github = styled.a`
   font-size: 18px;
 `;
 
+const Screen = styled.img`
+  margin-top: 20px;
+  ${media.lessThan("large")`
+    display: none;
+  `};
+`;
+
 export default function Header() {
   return (
-    <Container all={{ mobile: 2, tablet: 4, desktop: 6 }}>
+    <Container all={{ mobile: 2, tablet: 4, desktop: 5 }}>
       <Logo src={require("./images/logo.png")} />
       <Slogan>Zero Config desktop UI for Jest</Slogan>
+      <Screen src={require("./images/Intro.png")} />
       <Buttons>
         <DownloadButton name="Windows App" />
-        <DownloadButton name="Mac Os App" />
+        <DownloadButton name="Mac OS App" />
       </Buttons>
-      <Github target="_blank" href="https://github.com/Raathigesh/majestic">⭐ Visit Github</Github>
+      <Github target="_blank" href="https://github.com/Raathigesh/majestic">
+        ⭐ Visit Github
+      </Github>
     </Container>
   );
 }

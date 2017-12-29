@@ -12,6 +12,7 @@ const Button = styled.button`
   font-size: 16px;
   cursor: pointer;
   font-family: "Raleway Light", sans-serif;
+  font-weight: bold;
 
   &:hover {
     background-color: #fb4f5f;
