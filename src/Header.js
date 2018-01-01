@@ -48,8 +48,16 @@ export default function Header() {
       <Slogan>Zero Config desktop UI for Jest</Slogan>
       <Screen src={require("./images/Intro.png")} />
       <Buttons>
-        <DownloadButton name="Windows App" />
-        <DownloadButton name="Mac OS App" />
+        <DownloadButton
+          name="Windows App"
+          href="https://github.com/Raathigesh/majestic/releases/download/v0.1.0/majestic-setup-0.1.0.exe"
+          target="_blank"
+        />
+        <DownloadButton
+          name="Mac OS App"
+          href="https://github.com/Raathigesh/majestic/releases/download/v0.1.0/Majestic-0.1.0.dmg"
+          target="_blank"
+        />
       </Buttons>
       <Github target="_blank" href="https://github.com/Raathigesh/majestic">
         ⭐ Visit Github
