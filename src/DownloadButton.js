@@ -13,12 +13,13 @@ const Button = styled.a`
   cursor: pointer;
   font-family: "Raleway Light", sans-serif;
   font-weight: bold;
+  text-decoration: initial;
 
   &:hover {
     background-color: #fb4f5f;
   }
 `;
 
-export default function DownloadButton({ name }) {
-  return <Button>{name}</Button>;
+export default function DownloadButton({ name, ...props }) {
+  return <Button {...props}>{name}</Button>;
 }
