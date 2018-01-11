@@ -50,12 +50,12 @@ export default function Header() {
       <Buttons>
         <DownloadButton
           name="Windows App"
-          href="https://github.com/Raathigesh/majestic/releases/download/0.2.0/majestic-setup-0.2.0.exe"
+          href="https://github.com/Raathigesh/majestic/releases/download/v0.2.0/majestic-setup-0.2.0.exe"
           target="_blank"
         />
         <DownloadButton
           name="Mac OS App"
-          href="https://github.com/Raathigesh/majestic/releases/download/0.2.0/Majestic-0.2.0.dmg"
+          href="https://github.com/Raathigesh/majestic/releases/download/v0.2.0/Majestic-0.2.0.dmg"
           target="_blank"
         />
       </Buttons>
