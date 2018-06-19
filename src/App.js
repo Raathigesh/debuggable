@@ -46,13 +46,13 @@ const IndexPage = () => (
         desc="Zero config UI for Jest. Reinventing your test
         experience."
         logo={require("./assets/majestic.png")}
-        url={"http://getatmo.com"}
+        url={"https://majestic.debuggable.io"}
       />
       <Product
         desc="Mock APIs for your prototypes and
         experiments."
         logo={require("./assets/atmo.png")}
-        url={"http://wiretap.debuggable.io"}
+        url={"http://getatmo.com/"}
       />
       <Product
         desc="A desktop app for inspecting mobx and

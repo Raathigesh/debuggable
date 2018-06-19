@@ -37,7 +37,7 @@ const Link = styled.a`
 
 export default function Product({ url, desc, logo }) {
   return (
-    <Link href="url" target="_blank">
+    <Link href={url} target="_blank">
       <ProductContainer href={url} target="_blank">
         <Header>
           <Icon src={logo} />
