@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Product from "./Product";
+import Logo from "./Logo";
 
 const Container = styled.div`
   margin-right: auto;
@@ -13,11 +14,6 @@ const Container = styled.div`
   color: gray;
   align-items: center;
   min-height: 100vh;
-`;
-
-const Logo = styled.img`
-  margin-top: 50px;
-  margin-bottom: 50px;
 `;
 
 const Products = styled.div`
@@ -37,26 +33,40 @@ const Footer = styled.span`
   }
 `;
 
+const Highlight = styled.span`
+  color: #ffc100;
+  border-bottom: 1px solid #484646;
+`;
+
 const IndexPage = () => (
   <Container>
-    <Logo src={require("./assets/logo.png")} />
+    <Logo />
     <Products>
       <Product
-        name="Atmo"
-        logo={require("./assets/atmo.png")}
+        desc="Zero config UI for Jest. Reinventing your test
+        experience."
+        logo={require("./assets/majestic.png")}
         url={"http://getatmo.com"}
       />
       <Product
-        name="Wiretap"
+        desc="Mock APIs for your prototypes and
+        experiments."
+        logo={require("./assets/atmo.png")}
+        url={"http://wiretap.debuggable.io"}
+      />
+      <Product
+        desc="A desktop app for inspecting mobx and
+        mobx state tree apps"
         logo={require("./assets/wiretap.png")}
         url={"http://wiretap.debuggable.io"}
       />
     </Products>
     <Footer>
-      Side projects by{" "}
+      Built by{" "}
       <a href="https://twitter.com/Raathigesh" target="_blank">
-        Raathigeshan
-      </a>
+        <Highlight>Raathigeshan</Highlight>
+      </a>{" "}
+      and contributors
     </Footer>
   </Container>
 );

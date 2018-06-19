@@ -1,35 +1,49 @@
 import React from "react";
 import styled from "styled-components";
 
-const ProductContainer = styled.a`
-  border-style: solid;
-  border-width: 0.01388888888889in;
-  border-color: rgb(192, 192, 192);
-  height: 300px;
-  width: 300px;
+const ProductContainer = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  text-decoration: none;
-  color: gray;
-
-  & > img {
-    width: 150px;
-    height: 150px;
-  }
-
-  :hover {
-    background-color: rgb(250, 250, 250);
-  }
+  border-radius: 3px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.18);
+  width: 300px;
+  margin: 20px;
+  padding: 15px;
+  border: 1px solid #ffc100;
 `;
 
-export default function Product({ url, name, logo }) {
+const Header = styled.div`
+  display: flex;
+  flex-direction: row;
+  font-size: 28px;
+`;
+
+const Icon = styled.img`
+  height: 30px;
+`;
+
+const Name = styled.div``;
+
+const Description = styled.div`
+  margin-top: 10px;
+  font-size: 16px;
+`;
+
+const Link = styled.a`
+  text-decoration: none;
+  color: #696969;
+  font-weight: 600;
+`;
+
+export default function Product({ url, desc, logo }) {
   return (
-    <ProductContainer href={url} target="_blank">
-      <img src={logo} />
-      {name}
-    </ProductContainer>
+    <Link href="url" target="_blank">
+      <ProductContainer href={url} target="_blank">
+        <Header>
+          <Icon src={logo} />
+        </Header>
+        <Description>{desc}</Description>
+      </ProductContainer>
+    </Link>
   );
 }
