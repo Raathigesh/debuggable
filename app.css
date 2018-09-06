@@ -1,0 +1,156 @@
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #f3f2f2;
+  font-family: 'Raleway', sans-serif;
+}
+
+.header {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+a {
+  color: #35414e;
+}
+
+#root {
+  height: 500px;
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid #e6e6e6;
+}
+
+.button-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.download-button {
+  width: 200px;
+  height: 50px;
+  margin: 20px;
+  padding-top: 15px;
+  background-color: #ff6a4d;
+  font-size: 18px;
+  color: #2d2d2d;
+  text-align: center;
+  cursor: pointer;
+}
+
+.slogan {
+  font-size: 29px;
+  margin-bottom: 20px;
+}
+
+.sub-slogan {
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.warning {
+  font-size: 12px;
+  text-align: center;
+  margin-top: 5px;
+  font-weight: bold;
+}
+
+.features {
+  margin-top: 25px;
+  margin-bottom: 15px;
+}
+
+.features ul {
+  padding-left: 0px;
+}
+
+.features li {
+  list-style-type: none;
+  display: inline;
+  margin: 20px;
+  font-weight: bold;
+}
+
+.features i {
+  margin-right: 5px;
+  color: #ff6a4d;
+}
+
+.img {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  #root {
+    display: none;
+  }
+
+  iframe {
+    display: none;
+  }
+
+  .github-button {
+    display: none;
+  }
+
+  .sub-slogan {
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  .slogan {
+    text-align: center;
+    line-height: 33px;
+  }
+
+  .img {
+    display: block;
+  }
+
+  .img img {
+    width: 100%;
+  }
+
+  .features li {
+    list-style-type: none;
+    display: list-item;
+    font-size: 25px;
+    margin: 20px;
+    text-align: center;
+  }
+
+  .button-row {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .download-button {
+    width: 300px;
+    height: 60px;
+    margin: 20px;
+    padding-top: 15px;
+    font-size: 35px;
+  }
+
+  .warning {
+    display: none;
+  }
+
+  .features li {
+    font-size: 15px;
+  }
+
+  .download-button {
+    height: 30px;
+    padding-top: 5px;
+    background-color: #ff6a4d;
+    font-size: 16px;
+    color: #2d2d2d;
+    text-align: center;
+    cursor: pointer;
+    padding-bottom: 5px;
+  }
+}
