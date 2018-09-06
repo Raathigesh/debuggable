@@ -52,7 +52,7 @@ const IndexPage = () => (
         desc="Mock APIs for your prototypes and
         experiments."
         logo={require("./assets/atmo.png")}
-        url={"http://getatmo.com/"}
+        url={"https://atmo.debuggable.io/"}
       />
       <Product
         desc="A desktop app for inspecting mobx and
