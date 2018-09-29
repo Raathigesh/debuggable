@@ -38,7 +38,7 @@ export default function() {
     <Container>
       <LogoText>Debuggable</LogoText>
       <SloganText>
-        Fusing <Highlight>dev tools with UI</Highlight>
+        Tools for great <Highlight>developer experience</Highlight>
       </SloganText>
     </Container>
   );
